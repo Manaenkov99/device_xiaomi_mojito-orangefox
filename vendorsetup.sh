@@ -57,12 +57,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_DELETE_AROMAFM=1
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
 	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk.zip
+ 	export OF_OTA_BACKUP_STOCK_BOOT_IMAGE=1
 
 	# Ensure that /sdcard is bind-unmounted before f2fs data repair or format
 	export OF_UNBIND_SDCARD_F2FS=1
 
 	# Instruct magiskboot v24+ to always patch the vbmeta header when patching the recovery/boot image; do *not* remove!
-        export OF_PATCH_VBMETA_FLAG="1"
+        export FOX_PATCH_VBMETA_FLAG=1
 
 	# No special MIUI stuff
         export OF_VANILLA_BUILD=1
