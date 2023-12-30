@@ -83,8 +83,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_ALLOW_DISABLE_NAVBAR=0
 	
 	# R11.1 Settings
-	export FOX_VERSION="R11.1_1"
-	export FOX_BUILD_TYPE="Beta"
+	export FOX_VERSION="R11.1_4"
+	export FOX_BUILD_TYPE="beta"
 	export OF_MAINTAINER="Sushrut1101"
 
 	# Magisk
