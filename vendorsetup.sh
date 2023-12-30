@@ -66,7 +66,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export FOX_PATCH_VBMETA_FLAG=1
 
 	# No special MIUI stuff
-        export OF_VANILLA_BUILD=1
+        export FOX_VANILLA_BUILD=1
 	export OF_NO_MIUI_PATCH_WARNING=1
 
 	# Full Dynamic Partition size
