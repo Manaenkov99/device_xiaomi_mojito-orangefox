@@ -88,6 +88,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_BUILD_TYPE="beta"
 	export OF_MAINTAINER="Sushrut1101"
 
+ export TARGET="recoveryimage"
+ export OUTPUT="OrangeFox*.zip"
+
 	# Magisk
 	if [ -n "${FOX_USE_SPECIFIC_MAGISK_ZIP}" ]; then
 		if [ ! -e "${FOX_USE_SPECIFIC_MAGISK_ZIP}" ]; then
