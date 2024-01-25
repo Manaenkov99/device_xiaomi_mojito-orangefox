@@ -80,11 +80,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_CLOCK_POS=1
 	export OF_HIDE_NOTCH=1
 	export OF_ALLOW_DISABLE_NAVBAR=0
+ export TW_MAX_BRIGHTNESS=2047
 	
 	# R11.1 Settings
 	export FOX_VERSION="R11.1_4"
 	export FOX_BUILD_TYPE="beta"
-	export OF_MAINTAINER="Sushrut1101"
+	export OF_MAINTAINER="Manaenkov99"
 
  export TARGET="recoveryimage"
  export OUTPUT="OrangeFox*.zip"
